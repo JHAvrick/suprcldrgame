@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import './style.css'
-import { createWebHistory, createRouter } from 'vue-router'
+import { createWebHashHistory, createRouter } from 'vue-router'
 import { MotionPlugin } from '@vueuse/motion'
 import App from './App.vue'
 
@@ -13,7 +13,7 @@ const routes = [
 ]
 
 export const router = createRouter({
-  history: createWebHistory('/suprcldrgame/'),
+  history: createWebHashHistory('/suprcldrgame/'),
   routes,
 })
 
