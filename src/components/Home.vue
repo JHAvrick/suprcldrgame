@@ -12,8 +12,7 @@ import { ref } from 'vue'
 import { useMotion } from '@vueuse/motion'
 
 const iframeWrapper = ref<HTMLElement>()
-const iframe = ref<HTMLIFrameElement>()
-const motionInstance = useMotion(iframeWrapper, {
+useMotion(iframeWrapper, {
     initial: {
         opacity: 0,
         y: 500,
