@@ -6,10 +6,12 @@ import App from './App.vue'
 
 // import Home from './components/Home.vue'
 import PrivacyPolicy from './components/PrivacyPolicy.vue'
+import Support from './components/Support.vue'
 
 const routes = [
   { path: '/', component: PrivacyPolicy },
   { path: '/privacypolicy', component: PrivacyPolicy },
+  { path: '/support', component: Support },
 ]
 
 export const router = createRouter({
